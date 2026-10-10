@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHRONOS ÉLITE | Haute Horlogerie Genève • AI Avatar Masterclass</title>
+  <meta name="description" content="Experience the pinnacle of Swiss mechanical watchmaking presented by an AI Avatar. Discover flying tourbillons, perpetual calendars, and high horology craftsmanship.">
+  <meta name="keywords" content="luxury watches, Swiss watchmaking, haute horlogerie, tourbillon, perpetual calendar, AI avatar video, D-ID, Chronos Elite">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="CHRONOS ÉLITE | Haute Horlogerie Genève">
+  <meta property="og:description" content="Where classical Swiss micro-mechanics meets generative artificial intelligence. Watch the 45-second masterclass.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="luxury-theme">
+  <!-- Ambient Gold Dust Canvas -->
+  <canvas id="ambient-canvas" class="ambient-canvas"></canvas>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <div class="announcement-content">
+      <span class="pulse-gold-dot"></span>
+      <span>GENÈVE ATELIER EXCLUSIVE: AI PRESENTATION NOW LIVE</span>
+      <span class="sep">•</span>
+      <span id="api-status-badge" class="badge-live-api">D-ID API: CONNECTED (11 CREDITS)</span>
+      <span class="sep">•</span>
+      <span class="swiss-badge">🇨🇭 SWISS MANUFACTURE 1888</span>
+    </div>
+  </aside>
+
+  <!-- Main Navigation -->
+  <header class="luxury-navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" id="brand-logo">
+        <svg class="crown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="12" cy="18" r="1.5" fill="currentColor"/>
+          <circle cx="6" cy="18" r="1" fill="currentColor"/>
+          <circle cx="18" cy="18" r="1" fill="currentColor"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">CHRONOS ÉLITE</span>
+          <span class="brand-subtitle">GENÈVE • HAUTE HORLOGERIE</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#video-masterclass" class="nav-link"><span class="nav-num">01</span> AI Presentation</a>
+        <a href="#collection" class="nav-link"><span class="nav-num">02</span> Masterpieces</a>
+        <a href="#craftsmanship" class="nav-link"><span class="nav-num">03</span> Craftsmanship</a>
+        <a href="#ai-studio" class="nav-link"><span class="nav-num">04</span> AI Video Studio</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Mechanical Escapement Audio Toggle -->
+        <button id="escapement-audio-btn" class="audio-toggle-btn" title="Toggle Mechanical Escapement Sound (28,800 vph)">
+          <span class="audio-wave-anim">
+            <span></span><span></span><span></span><span></span>
+          </span>
+          <span class="audio-label">ESCAPEMENT: <strong id="audio-state-text">OFF</strong></span>
+        </button>
+
+        <button id="book-consultation-btn" class="btn-gold-outline">VIP Concierge</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main id="main-content">
+  <section class="hero-section" id="hero">
+    <div class="hero-backdrop-glow"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-tagline">
+          <span class="gold-line"></span>
+          <span>THE PINNACLE OF LUXURY TIMEPIECES</span>
+        </div>
+        <h1 class="hero-title">
+          TIME TRANSCENDED.<br>
+          <span class="gold-gradient-text">ETERNAL PERFECTION.</span>
+        </h1>
+        <p class="hero-description">
+          Where centuries of sacred Swiss micro-mechanics converge with state-of-the-art generative intelligence. Watch our curated 45-second horological masterclass guided by Dylan, Ambassador of Haute Horlogerie.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#video-masterclass" class="btn-primary-gold" id="hero-watch-btn">
+            <svg class="play-icon-svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            Watch 45s AI Masterclass
+          </a>
+          <a href="#collection" class="btn-secondary-glass">
+            Explore 2026 Collection
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-val">28,800</span>
+            <span class="stat-lbl">Vibrations / Hour</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat-item">
+            <span class="stat-val">384</span>
+            <span class="stat-lbl">Hand-Polished Parts</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat-item">
+            <span class="stat-val">72h</span>
+            <span class="stat-lbl">Power Reserve</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat-item">
+            <span class="stat-val">45s</span>
+            <span class="stat-lbl">AI Avatar Script</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="watch-orbit-container">
+          <div class="orbit-ring ring-1"></div>
+          <div class="orbit-ring ring-2"></div>
+          <div class="floating-watch-card" id="hero-floating-watch">
+            <img src="assets/watch_tourbillon.jpg" alt="The Celestial Tourbillon" class="hero-watch-img" id="hero-watch-image">
+            <div class="watch-badge-floating">
+              <span class="watch-badge-dot"></span>
+              <div>
+                <strong>Celestial Tourbillon</strong>
+                <span>Calibre CE-8890 Hand-Wound</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Avatar Video Presentation Section -->
+  <section class="video-masterclass-section" id="video-masterclass">
+    <div class="section-header">
+      <div class="section-eyebrow">EXCLUSIVE GENERATIVE AI PRESENTATION</div>
+      <h2 class="section-title">The Horology Masterclass <span class="gold-gradient-text">• 45 Seconds</span></h2>
+      <p class="section-subtitle">
+        Powered by D-ID Generative AI Avatar technology. Experience an articulate breakdown of why premium luxury watches stand as the ultimate triumph of human craftsmanship.
+      </p>
+    </div>
+
+    <div class="video-masterclass-grid">
+      <!-- Left Column: Video Theater -->
+      <div class="video-theater-wrapper">
+        <div class="video-frame-outer">
+          <div class="video-status-header">
+            <div class="video-status-pill">
+              <span class="rec-red-dot"></span>
+              <span>D-ID AI AMBASSADOR • 45s OFFICIAL SCRIPT</span>
+            </div>
+            <div class="video-quality-tag">1080P MASTER • 60 FPS</div>
+          </div>
+
+          <div class="video-container" id="video-player-container">
+            <video id="avatar-video" playsinline preload="auto" poster="assets/watch_tourbillon.jpg">
+              <source src="assets/premium_watches_avatar.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
+            <!-- Video Overlay Play Button -->
+            <button class="video-big-play-btn" id="big-play-btn" aria-label="Play Video">
+              <div class="play-triangle"></div>
+            </button>
+
+            <!-- Video Custom Controls Bar -->
+            <div class="custom-video-controls" id="custom-controls">
+              <button class="control-btn" id="play-pause-btn" aria-label="Play or Pause">
+                <svg class="icon-play" id="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+                <svg class="icon-pause" id="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+                  <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                </svg>
+              </button>
+
+              <div class="time-display">
+                <span id="current-time">00:00</span> / <span id="duration-time">00:39</span>
+              </div>
+
+              <!-- Scrubber Bar -->
+              <div class="scrubber-bar-container" id="scrubber-container">
+                <div class="scrubber-track">
+                  <div class="scrubber-buffered" id="scrubber-buffered"></div>
+                  <div class="scrubber-progress" id="scrubber-progress"></div>
+                  <div class="scrubber-handle" id="scrubber-handle"></div>
+                </div>
+              </div>
+
+              <!-- Volume Control -->
+              <div class="volume-container">
+                <button class="control-btn" id="volume-btn" aria-label="Mute or Unmute">
+                  <svg id="volume-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  </svg>
+                </button>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="1" class="volume-slider" aria-label="Volume">
+              </div>
+
+              <!-- Speed Toggle -->
+              <button class="speed-btn" id="speed-btn">1.0x</button>
+
+              <!-- Fullscreen Button -->
+              <button class="control-btn" id="fullscreen-btn" aria-label="Toggle Fullscreen">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Video Specs Footer -->
+          <div class="video-footer-meta">
+            <div class="meta-pill">
+              <strong>Avatar:</strong> Dylan (Grey Executive Suit)
+            </div>
+            <div class="meta-pill">
+              <strong>Voice:</strong> Microsoft Christopher Neural
+            </div>
+            <div class="meta-pill">
+              <strong>Engine:</strong> D-ID Generative Cloud
+            </div>
+            <div class="meta-pill">
+              <strong>Topic:</strong> Swiss Haute Horlogerie
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Live Teleprompter / Synchronized Script -->
+      <div class="teleprompter-wrapper">
+        <div class="teleprompter-header">
+          <div class="teleprompter-title-row">
+            <svg class="teleprompter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <div>
+              <h3>Interactive 45s Teleprompter</h3>
+              <p>Click any phrase to jump the avatar to that timestamp</p>
+            </div>
+          </div>
+          <span class="live-synch-pill">
+            <span class="synch-dot"></span> LIVE SYNC
+          </span>
+        </div>
+
+        <div class="script-timeline" id="script-timeline">
+          <!-- Phrase 1 -->
+          <div class="script-segment" data-start="0" data-end="7.5" id="phrase-1">
+            <div class="segment-meta">
+              <span class="timestamp-badge">00:00 - 00:07</span>
+              <span class="phrase-tag">Opening Reverence</span>
+            </div>
+            <p class="phrase-text">
+              "Welcome to the pinnacle of horology, where time is not merely counted, but revered."
+            </p>
+            <div class="phrase-progress-bar"><div class="phrase-progress-fill"></div></div>
+          </div>
+
+          <!-- Phrase 2 -->
+          <div class="script-segment" data-start="7.5" data-end="17.5" id="phrase-2">
+            <div class="segment-meta">
+              <span class="timestamp-badge">00:07 - 00:17</span>
+              <span class="phrase-tag">Micro-Engineering</span>
+            </div>
+            <p class="phrase-text">
+              "A premium timepiece is far more than an instrument; it is a symphony of micro-engineering, sculpted in hand-finished gold, platinum, and sapphire crystal."
+            </p>
+            <div class="phrase-progress-bar"><div class="phrase-progress-fill"></div></div>
+          </div>
+
+          <!-- Phrase 3 -->
+          <div class="script-segment" data-start="17.5" data-end="25.5" id="phrase-3">
+            <div class="segment-meta">
+              <span class="timestamp-badge">00:17 - 00:25</span>
+              <span class="phrase-tag">Sacred Heritage</span>
+            </div>
+            <p class="phrase-text">
+              "Inside, hundreds of mechanical components beat in flawless harmony, powered by centuries of master watchmaking heritage."
+            </p>
+            <div class="phrase-progress-bar"><div class="phrase-progress-fill"></div></div>
+          </div>
+
+          <!-- Phrase 4 -->
+          <div class="script-segment" data-start="25.5" data-end="33.0" id="phrase-4">
+            <div class="segment-meta">
+              <span class="timestamp-badge">00:25 - 00:33</span>
+              <span class="phrase-tag">Complications</span>
+            </div>
+            <p class="phrase-text">
+              "From the mesmerizing dance of a tourbillon to the enduring legacy of a perpetual calendar, each second is an ode to human ingenuity."
+            </p>
+            <div class="phrase-progress-bar"><div class="phrase-progress-fill"></div></div>
+          </div>
+
+          <!-- Phrase 5 -->
+          <div class="script-segment" data-start="33.0" data-end="39.0" id="phrase-5">
+            <div class="segment-meta">
+              <span class="timestamp-badge">00:33 - 00:39</span>
+              <span class="phrase-tag">Crescendo</span>
+            </div>
+            <p class="phrase-text">
+              "A true luxury watch does not just tell the time—it defines yours. Welcome to timeless perfection."
+            </p>
+            <div class="phrase-progress-bar"><div class="phrase-progress-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="teleprompter-footer">
+          <div class="script-word-count">
+            <strong>Word Count:</strong> 93 Words • <strong>Target Cadence:</strong> 135 wpm • <strong>Duration:</strong> 39-45s
+          </div>
+          <button class="btn-sm-gold-outline" id="copy-script-btn">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            Copy Script
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Haute Horlogerie Watch Collection -->
+  <section class="collection-section" id="collection">
+    <div class="section-header">
+      <div class="section-eyebrow">HAUTE HORLOGERIE MASTERPIECES</div>
+      <h2 class="section-title">The 2026 Manufacture Portfolio</h2>
+      <p class="section-subtitle">
+        Hand-assembled by master watchmakers in Vallée de Joux. Featuring micro-mechanical complications celebrated in our AI masterclass.
+      </p>
+    </div>
+
+    <div class="watch-grid">
+      <!-- Watch 1: Celestial Tourbillon -->
+      <article class="watch-card" data-watch="tourbillon">
+        <div class="watch-card-inner">
+          <div class="card-image-wrap">
+            <img src="assets/watch_tourbillon.jpg" alt="Celestial Flying Tourbillon" class="card-watch-img" loading="lazy">
+            <div class="card-badge">GRAND COMPLICATION</div>
+            <div class="card-overlay-actions">
+              <button class="btn-inspect-specs" data-target="tourbillon">Inspect Calibre</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="watch-reference">REF. CE-8890-OR</div>
+            <h3 class="watch-name">The Celestial Flying Tourbillon</h3>
+            <p class="watch-desc">
+              A 60-second flying tourbillon cage revolving weightlessly against gravity. Openworked skeleton bridge finished with Côtes de Genève and blued screws.
+            </p>
+            <div class="watch-specs-preview">
+              <div class="spec-tag"><span>Calibre</span> <strong>CE-8890</strong></div>
+              <div class="spec-tag"><span>Reserve</span> <strong>72 Hours</strong></div>
+              <div class="spec-tag"><span>Bezel</span> <strong>18K Rose Gold</strong></div>
+            </div>
+            <div class="card-footer">
+              <span class="watch-price">$185,000 USD</span>
+              <button class="btn-acquire" data-watch="The Celestial Flying Tourbillon">Inquire Private Allocation</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Watch 2: Perpetual Calendar -->
+      <article class="watch-card" data-watch="perpetual">
+        <div class="watch-card-inner">
+          <div class="card-image-wrap">
+            <img src="assets/watch_perpetual.jpg" alt="Perpetual Calendar Moonphase" class="card-watch-img" loading="lazy">
+            <div class="card-badge">ASTRONOMICAL CALENDAR</div>
+            <div class="card-overlay-actions">
+              <button class="btn-inspect-specs" data-target="perpetual">Inspect Calibre</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="watch-reference">REF. PC-1888-LUNA</div>
+            <h3 class="watch-name">The Chronomaster Perpetual Calendar</h3>
+            <p class="watch-desc">
+              Mechanical memory programmed until the year 2100. Accurate astronomical moonphase requiring correction once every 122 years, encased in satin-finished rose gold.
+            </p>
+            <div class="watch-specs-preview">
+              <div class="spec-tag"><span>Calibre</span> <strong>PC-1888</strong></div>
+              <div class="spec-tag"><span>Moonphase</span> <strong>122-Year Cam</strong></div>
+              <div class="spec-tag"><span>Strap</span> <strong>Mississipiensis Alligator</strong></div>
+            </div>
+            <div class="card-footer">
+              <span class="watch-price">$142,000 USD</span>
+              <button class="btn-acquire" data-watch="The Chronomaster Perpetual Calendar">Inquire Private Allocation</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Watch 3: Royal Chronograph -->
+      <article class="watch-card" data-watch="chronograph">
+        <div class="watch-card-inner">
+          <div class="card-image-wrap">
+            <img src="assets/watch_chronograph.jpg" alt="Royal Chronograph Forged Carbon" class="card-watch-img" loading="lazy">
+            <div class="card-badge">HIGH SPORT LUXURY</div>
+            <div class="card-overlay-actions">
+              <button class="btn-inspect-specs" data-target="chronograph">Inspect Calibre</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="watch-reference">REF. RO-5400-FC</div>
+            <h3 class="watch-name">The Royal Chronograph Forged Carbon</h3>
+            <p class="watch-desc">
+              Aerospace-grade forged carbon bezel paired with an 18K solid yellow gold inner case. Column-wheel flyback chronograph mechanism beating at 4 Hz.
+            </p>
+            <div class="watch-specs-preview">
+              <div class="spec-tag"><span>Calibre</span> <strong>CH-5400 Flyback</strong></div>
+              <div class="spec-tag"><span>Frequency</span> <strong>28,800 vph</strong></div>
+              <div class="spec-tag"><span>Case</span> <strong>Forged Carbon & Gold</strong></div>
+            </div>
+            <div class="card-footer">
+              <span class="watch-price">$98,000 USD</span>
+              <button class="btn-acquire" data-watch="The Royal Chronograph Forged Carbon">Inquire Private Allocation</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Interactive AI Video Studio (Connected with D-ID API) -->
+  <section class="ai-studio-section" id="ai-studio">
+    <div class="section-header">
+      <div class="section-eyebrow">D-ID GENERATIVE AI ENGINE</div>
+      <h2 class="section-title">The Live Horology AI Studio</h2>
+      <p class="section-subtitle">
+        Directly generate customized AI avatar watch presentations in real time using the connected D-ID API credentials.
+      </p>
+    </div>
+
+    <div class="studio-card">
+      <div class="studio-sidebar">
+        <div class="api-health-box">
+          <div class="api-health-header">
+            <span class="status-indicator-green"></span>
+            <strong>D-ID API Credentials</strong>
+          </div>
+          <div class="api-key-masked">
+            <code>Z29vZ2xl...Oc1</code>
+          </div>
+          <div class="credits-meter">
+            <div class="credits-labels">
+              <span>Account Balance:</span>
+              <span id="credits-count-val"><strong>11 Credits</strong> Available</span>
+            </div>
+            <div class="credits-bar">
+              <div class="credits-fill" style="width: 91%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Presenter Picker -->
+        <div class="form-group">
+          <label class="form-label" for="presenter-select">Select AI Presenter Avatar:</label>
+          <select id="presenter-select" class="luxury-select">
+            <option value="v2_public_dylan_grey_suite_lobby@veRJGS_iOD" selected>Dylan • Grey Suit (Executive Lobby)</option>
+            <option value="v2_public_alyssa_red_suite_lobby@eRGtappQAP">Alyssa • Red Suit (Luxury Lobby)</option>
+            <option value="v2_public_alex_black_suite_green_screen@u8RGmlrjpD">Alex • Black Suit (Studio)</option>
+            <option value="v2_public_joseph_grey_suite_coffeeshop@7fiPyaDUIq">Joseph • Grey Suit (Executive)</option>
+            <option value="v2_public_William_NoHands_BlackShirt_Lab@ro_YvG4mU1">William • Black Suit (Horology Lab)</option>
+          </select>
+        </div>
+
+        <!-- Voice Picker -->
+        <div class="form-group">
+          <label class="form-label" for="voice-select">Neural Voice Engine:</label>
+          <select id="voice-select" class="luxury-select">
+            <option value="en-US-ChristopherNeural" selected>Christopher Neural (Warm British / Refined)</option>
+            <option value="en-US-GuyNeural">Guy Neural (Articulate & Confident)</option>
+            <option value="en-US-JennyNeural">Jenny Neural (Graceful & Elegant)</option>
+            <option value="en-US-BrianMultilingualNeural">Brian Multilingual (Authoritative Horologist)</option>
+          </select>
+        </div>
+
+        <!-- Script Presets -->
+        <div class="form-group">
+          <label class="form-label">Script Presets (~45s):</label>
+          <div class="preset-buttons">
+            <button class="btn-preset active" data-preset="1">45s Swiss Masterclass</button>
+            <button class="btn-preset" data-preset="2">45s Tourbillon Gravity</button>
+            <button class="btn-preset" data-preset="3">45s Perpetual Heritage</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="studio-main">
+        <label class="form-label" for="custom-script-text">Script for AI Avatar (Approx. 40 - 45 Seconds):</label>
+        <textarea id="custom-script-text" class="luxury-textarea" rows="7" placeholder="Enter script for the AI presenter to speak...">Welcome to the pinnacle of horology, where time is not merely counted, but revered. A premium timepiece is far more than an instrument; it is a symphony of micro-engineering, sculpted in hand-finished gold, platinum, and sapphire crystal. Inside, hundreds of mechanical components beat in flawless harmony, powered by centuries of master watchmaking heritage. From the mesmerizing dance of a tourbillon to the enduring legacy of a perpetual calendar, each second is an ode to human ingenuity. A true luxury watch does not just tell the time—it defines yours. Welcome to timeless perfection.</textarea>
+        
+        <div class="script-stats-bar">
+          <span id="script-word-stat">93 words</span>
+          <span class="dot">•</span>
+          <span id="script-est-time">~42 seconds</span>
+          <span class="dot">•</span>
+          <span class="credit-cost-tag">Consumes 3 D-ID Credits</span>
+        </div>
+
+        <div class="studio-action-row">
+          <button id="generate-video-btn" class="btn-primary-gold btn-generate">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            Generate AI Video With D-ID
+          </button>
+          
+          <button id="reset-current-video-btn" class="btn-gold-outline">
+            Play Current Master Video
+          </button>
+        </div>
+
+        <!-- Live Generation Progress Card -->
+        <div id="generation-progress-card" class="generation-card" style="display: none;">
+          <div class="generation-card-header">
+            <div class="spinner-gold"></div>
+            <div>
+              <h4 id="gen-status-title">D-ID Cloud Engine Rendering...</h4>
+              <p id="gen-status-detail">Sending script and neural voice synthesis request to D-ID API...</p>
+            </div>
+          </div>
+          <div class="gen-progress-bar">
+            <div class="gen-progress-fill" id="gen-progress-fill" style="width: 15%;"></div>
+          </div>
+          <div class="gen-timer-text" id="gen-timer-text">Elapsed: 5s • Polling status</div>
+        </div>
+
+        <!-- Generation Result Banner -->
+        <div id="generation-success-card" class="gen-success-card" style="display: none;">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#22c55e" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+          <div class="success-text">
+            <h4>New AI Avatar Video Generated!</h4>
+            <p>Your custom video has been rendered and loaded into the master player above.</p>
+          </div>
+          <button class="btn-sm-gold" id="view-new-video-btn">Watch Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Craftsmanship Section -->
+  <section class="craftsmanship-section" id="craftsmanship">
+    <div class="section-header">
+      <div class="section-eyebrow">METICULOUS GENEVA STANDARDS</div>
+      <h2 class="section-title">The Art of High Horology</h2>
+      <p class="section-subtitle">
+        Every Chronos Élite timepiece bears the Poinçon de Genève, requiring over 400 hours of individual hand-decoration.
+      </p>
+    </div>
+
+    <div class="craft-tabs-wrapper">
+      <div class="craft-tab-buttons">
+        <button class="craft-tab-btn active" data-tab="escapement">The Escapement</button>
+        <button class="craft-tab-btn" data-tab="anglage">Hand Anglage</button>
+        <button class="craft-tab-btn" data-tab="materials">Noble Metallurgy</button>
+        <button class="craft-tab-btn" data-tab="guilloche">Guilloché Dials</button>
+      </div>
+
+      <div class="craft-tab-content active" id="tab-escapement">
+        <div class="craft-content-grid">
+          <div class="craft-text">
+            <h3>28,800 Vibrations Per Hour</h3>
+            <p>
+              The beating heart of our mechanical calibres. A free-sprung Glucydur balance wheel coupled with a Breguet overcoil hairspring oscillates 8 times every single second, slicing time into infinitesimally precise increments.
+            </p>
+            <ul class="craft-points">
+              <li><span>Chronometric Accuracy:</span> -1/+2 seconds per day deviation</li>
+              <li><span>Antimagnetic Resistance:</span> Up to 15,000 Gauss using Silinvar silicon</li>
+              <li><span>Inertia Blocks:</span> Microstella variable inertia regulating screws</li>
+            </ul>
+          </div>
+          <div class="craft-badge-panel">
+            <div class="badge-large-number">8 Hz</div>
+            <div class="badge-large-label">Harmonic Frequency</div>
+            <p>Listen to this exact beat rhythm using the Escapement Audio toggle in the top navigation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="craft-tab-content" id="tab-anglage">
+        <div class="craft-content-grid">
+          <div class="craft-text">
+            <h3>Mirror-Polished Chamfering</h3>
+            <p>
+              No mechanical component leaves our manufacture without every sharp edge hand-beveled at a 45-degree angle. Master artisans use gentian wood and diamond paste to achieve a flawless speculaire mirror finish that catches light from every angle.
+            </p>
+            <ul class="craft-points">
+              <li><span>Côtes de Genève:</span> 1.5mm striped damaskeening along bridge plates</li>
+              <li><span>Perlage:</span> Overlapping circular graining applied to baseplates</li>
+              <li><span>Blued Screws:</span> Thermally tempered at exactly 290°C to deep royal blue</li>
+            </ul>
+          </div>
+          <div class="craft-badge-panel">
+            <div class="badge-large-number">45°</div>
+            <div class="badge-large-label">Hand-Cut Bevels</div>
+            <p>Inspected under 20x stereoscopic loupes for zero surface imperfections.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="craft-tab-content" id="tab-materials">
+        <div class="craft-content-grid">
+          <div class="craft-text">
+            <h3>18K Rose Gold, 950 Platinum & Forged Carbon</h3>
+            <p>
+              Our cases are cold-stamped from single ingots of ethically certified Swiss gold and aerospace Grade 5 titanium. Sapphire crystals undergo nine layers of anti-reflective coating on both interior and exterior facets.
+            </p>
+            <ul class="craft-points">
+              <li><span>Platinum 950:</span> Inalterable density and cool radiant luster</li>
+              <li><span>Forged Carbon:</span> Formed under 300 bars of pressure for unique organic marbling</li>
+              <li><span>Ceramic Bezels:</span> Diamond-hard zirconium oxide sintered at 1,500°C</li>
+            </ul>
+          </div>
+          <div class="craft-badge-panel">
+            <div class="badge-large-number">950‰</div>
+            <div class="badge-large-label">Pure Platinum</div>
+            <p>Hypoallergenic, corrosion-proof, and designed to endure centuries of family heritage.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="craft-tab-content" id="tab-guilloche">
+        <div class="craft-content-grid">
+          <div class="craft-text">
+            <h3>Traditional Engine-Turned Dials</h3>
+            <p>
+              Dial faces engraved using antique 19th-century rose engines operated strictly by hand. Patterns like Clous de Paris, Grand Tapisserie, and Sunburst wave formations create mesmerizing multidimensional depth.
+            </p>
+            <ul class="craft-points">
+              <li><span>Aventurine Quartz:</span> Natural deep blue mineral mimicking the midnight cosmos</li>
+              <li><span>Grand Feu Enamel:</span> Glass powder baked repeatedly at 800°C for imperishable luster</li>
+              <li><span>Faceted Hands:</span> Diamond-cut alpha and feuille hands filled with Super-LumiNova</li>
+            </ul>
+          </div>
+          <div class="craft-badge-panel">
+            <div class="badge-large-number">1888</div>
+            <div class="badge-large-label">Historic Rose Engine</div>
+            <p>Every dial is unique, carrying the subtle human fingerprint of the guillocheur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIP Concierge / Consultation Modal -->
+  <div class="modal-backdrop" id="consultation-modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div class="modal-header">
+        <div class="modal-eyebrow">PRIVATE ALLOCATION</div>
+        <h3 class="modal-title">Request a Private Salon Viewing</h3>
+        <p class="modal-desc">
+          Meet with a Chronos Élite master horologist at our private salons or request an exclusive digital session.
+        </p>
+      </div>
+
+      <form id="concierge-form" class="concierge-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="client-name">Full Name</label>
+            <input type="text" id="client-name" class="luxury-input" placeholder="e.g. Lord Alexander Wright" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="client-email">Email Address</label>
+            <input type="email" id="client-email" class="luxury-input" placeholder="e.g. alexander@elite.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="salon-location">Preferred Salon</label>
+            <select id="salon-location" class="luxury-select">
+              <option value="geneva">Geneva Flagship • Rue du Rhône</option>
+              <option value="london">London Mayfair • Old Bond Street</option>
+              <option value="zurich">Zurich • Bahnhofstrasse</option>
+              <option value="newyork">New York • Madison Avenue</option>
+              <option value="tokyo">Tokyo • Ginza 6</option>
+              <option value="virtual">Private VIP Virtual Presentation</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="watch-interest">Timepiece of Interest</label>
+            <select id="watch-interest" class="luxury-select">
+              <option value="tourbillon">The Celestial Flying Tourbillon ($185k)</option>
+              <option value="perpetual">The Chronomaster Perpetual Calendar ($142k)</option>
+              <option value="chronograph">The Royal Chronograph Forged Carbon ($98k)</option>
+              <option value="bespoke">Bespoke Commission & Inquiries</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="client-notes">Special Requests / Preferences</label>
+          <textarea id="client-notes" class="luxury-textarea" rows="3" placeholder="Tell us about your collection or preferred viewing dates..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary-gold btn-full">
+          Confirm Private Consultation Request
+        </button>
+      </form>
+
+      <div id="concierge-confirmation" class="concierge-confirmation" style="display: none;">
+        <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#d4af37" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M8 12l2.5 2.5L16 9"></path>
+        </svg>
+        <h4>Reservation Request Received</h4>
+        <p>A Senior Horological Concierge will contact you within four hours to arrange your private salon reception.</p>
+        <button class="btn-gold-outline" id="close-confirmed-btn">Return to Exhibition</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Calibre Specs Modal -->
+  <div class="modal-backdrop" id="calibre-modal" aria-hidden="true">
+    <div class="modal-dialog modal-wide">
+      <button class="modal-close-btn" id="calibre-close-btn" aria-label="Close dialog">&times;</button>
+      <div id="calibre-content">
+        <!-- Dynamically injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  </main>
+
+  <!-- Luxury Footer -->
+  <footer class="luxury-footer">
+    <div class="footer-container">
+      <div class="footer-brand-col">
+        <div class="brand-logo footer-logo">
+          <svg class="crown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="12" cy="18" r="1.5" fill="currentColor"/>
+          </svg>
+          <div class="brand-text">
+            <span class="brand-name">CHRONOS ÉLITE</span>
+            <span class="brand-subtitle">HAUTE HORLOGERIE GENÈVE</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Crafting timepieces of uncompromised mechanical mastery since 1888. Pioneers in pairing sacred Swiss watchmaking traditions with generative avatar intelligence.
+        </p>
+        <div class="swiss-seal">
+          <span>POINÇON DE GENÈVE CERTIFIED</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>The Collection</h4>
+        <ul>
+          <li><a href="#collection">Celestial Tourbillons</a></li>
+          <li><a href="#collection">Astronomical Calendars</a></li>
+          <li><a href="#collection">Flyback Chronographs</a></li>
+          <li><a href="#collection">Bespoke Horlogerie</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>AI Innovation</h4>
+        <ul>
+          <li><a href="#video-masterclass">45s AI Masterclass</a></li>
+          <li><a href="#ai-studio">D-ID Generative Studio</a></li>
+          <li><a href="#ai-studio">Neural Speech Synthesis</a></li>
+          <li><a href="#video-masterclass">Interactive Transcript</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Salons & VIP</h4>
+        <ul>
+          <li>Rue du Rhône 42, Genève</li>
+          <li>14 Old Bond St, London</li>
+          <li>650 Madison Ave, New York</li>
+          <li>Ginza Chuo-ku, Tokyo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>&copy; 2026 Chronos Élite Genève. All Rights Reserved. Manufactured under strict Swiss Poinçon standards.</div>
+        <div class="api-watermark">AI Video Generation powered by D-ID Cloud Engine</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

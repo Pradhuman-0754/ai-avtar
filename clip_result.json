@@ -1,0 +1,69 @@
+{
+  "audio_url": "https://d-id-clips-prod.s3.us-west-2.amazonaws.com/google-oauth2%7C107640538731481856492/clp_TtKxR67i1u1elbwYC2OYY/microsoft.wav?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA5CUMPJBIJ7CPKJNP%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T082701Z&X-Amz-Expires=86400&X-Amz-Signature=1fd12db5ebe55d8b6134b30118a01c9a9a5177981f4bee71072307aa79d8331d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+  "completed_at": "2026-10-10T08:27:26.897",
+  "config": {
+    "result_format": ".mp4",
+    "denoise_audio": true,
+    "optimize_audio": true,
+    "logo": {
+      "position": [
+        0,
+        0
+      ],
+      "url": "https://d-id-user-logos-prod.s3.us-west-2.amazonaws.com/default/worker/did-watermark-2023.png"
+    },
+    "fluent": false
+  },
+  "created_at": "2026-10-10T08:27:01.673Z",
+  "created_by": "google-oauth2|107640538731481856492",
+  "driver_id": "9mMps_xg_q",
+  "duration": 38.675,
+  "id": "clp_TtKxR67i1u1elbwYC2OYY",
+  "metadata": {
+    "num_frames": 975,
+    "processing_fps": 45.35,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "size_kib": 12727.4970703125
+  },
+  "modified_at": "2026-10-10T08:27:27.101Z",
+  "presenter_id": "v2_public_dylan_grey_suite_lobby@veRJGS_iOD",
+  "script": {
+    "subtitles": false,
+    "provider": {
+      "type": "microsoft",
+      "voice_id": "en-US-ChristopherNeural"
+    },
+    "length": 590,
+    "ssml": false,
+    "type": "text"
+  },
+  "source_url": "https://clips-presenters.d-id.com/v2/google__oauth2_116880684939969964349/veRJGS_iOD/9mMps_xg_q/thumbnail.png",
+  "started_at": "2026-10-10T08:27:03.608",
+  "status": "done",
+  "subtitles": false,
+  "version": "v2",
+  "result_url": "https://d-id-clips-prod.s3.us-west-2.amazonaws.com/google-oauth2%7C107640538731481856492/clp_TtKxR67i1u1elbwYC2OYY/v2_public_dylan_grey_suite_lobby%40veRJGS_iOD.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA5CUMPJBIJ7CPKJNP%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T082727Z&X-Amz-Expires=86400&X-Amz-Signature=b2efdfd3fad757f3410ec99dc212fd44e7f5f13b130a9048b812790d357e8ed0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+  "user": {
+    "email": "pradhumanbunkar@gmail.com",
+    "api_key_name": "k",
+    "owner_id": "google-oauth2|107640538731481856492",
+    "id": "google-oauth2|107640538731481856492",
+    "features": [
+      "stitch",
+      "clips:write",
+      "scene",
+      "premium-plus:skip-speaker-validation",
+      "expressives",
+      null
+    ],
+    "stripe_plan_group": "deid-trial",
+    "data_region": "us",
+    "plan": "deid-trial",
+    "authorizer": "basic",
+    "api_key_id": "ak_oiRrKLzdHGTa6BsNc1QRq"
+  },
+  "owner_id": "google-oauth2|107640538731481856492"
+}
